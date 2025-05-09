@@ -1,0 +1,20 @@
+Pablo Emanuell Lopes Targino
+
+mkdir t2_git
+cd t2_git
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead 
+notepad texto.txt
+git add texto.txt
+git commit -m "Commit de uma linha qualquer"
+git  checkout -b feature-1
+notepad texto.txt
+git add texto.txt
+git commit -m "texto modificado"
+git checkout main
+notepad texto.txt
+git add texto.txt
+git commit -m "texto alterado na main"
+git merge feature-1
+git add texto.txt
+git commit -m "merge finalizado"
+git checkout -b add-comandos
